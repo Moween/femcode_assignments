@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#part1-container {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#header {
+  border-bottom: 1px solid black;
+}
+
+#flex-container {
+  border: 1px solid border;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.small-box {
+  border: 1px solid black;
+  width: 20%;
+  height: 150px;
+  margin: 10px; 
+  background-color: palevioletred;
+}
+
+.large-box {
+  border: 1px solid black;
+  width: 70%;
+  height: 150px;
+  margin: 10px; 
+  background-color: aquamarine;
+}
+
+#longest-box {
+  border: 1px solid black;
+  width: 95%;
+  margin: 10px; 
+  height: 150px;
+  background-color: yellow;
+}
+
+/* This is for the part2 */
+#part2-container {
+  border: 1px solid black;
+  margin: 30px;
+}
+
+#flex-container2 {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+
+}
+
+
+#largebox {
+  width: 97%;
+  height: 150px;
+  border: 1px solid black;
+  height: 150px;
+  margin-top:  20px;
+  margin-bottom: 20px;
+  background-color: rgba(161, 50, 161, 0.884);
+}
+
+.part2-smallbox {
+  width: 30%;
+  height: 150px;
+  border: 1px solid black;
+  height: 600px;
+  margin-top:  20px;
+  margin-bottom: 20px;
+
+}
+
+#smallbox1-color {
+  background-color: tomato;
+}
+
+#smallbox2-color {
+  background-color: gray;
+}
+
+#smallbox3-color {
+  background-color: orange;
+}
+
+
+/* This is for part3 */
+
+#part3-container {
+  border: 1px solid black;
+  margin: 30px;
+}
+
+#flex-container3 {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+
+}
+
+#flex-container3 > #largebox {
+  background-color: green;
+}
+
+.part3-smallbox {
+  width: 30%;
+  height: 150px;
+  border: 1px solid black;
+  margin-top:  20px;
+  margin-bottom: 20px;
+
+}
+
+
+#smbx4-color {
+ background-color: #ff9900;
+}
+
+#smbx5-color {
+  background-color: #cf2a27;
+}
+
+#smbx6-color {
+  background-color: #6fa8dc;
+}
+
+.smbx-color {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://images.all-free-download.com/images/graphicthumb/grass_trees_hd_picture_165975.jpg');
+}
