@@ -7,21 +7,17 @@
 body {
   font-size: 16px;
   font-family:'Times New Roman', Times, serif;  
+  background-color: rgba(112, 210, 240, 0.329);
 }
 
-#page-wrapper {
-  /* background-color: #eeeeee; */
-  background-color: blue;
+#main {
   width: 90%;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; 
 }
 
-#main {
-  text-align: center;
-}
 
 #title {
   margin-top: 20px;
@@ -40,17 +36,21 @@ body {
 }
 
 .p01:last-of-type {
-  margin-left: 25px;
+  margin-left: 10px;
   font-weight: 300;
 }
 
 #img-div {
-  max-width: 100%; 
   background-color: white;
   padding: 20px; 
 }
 
-#img {
+figure {
+  margin: 0;
+  max-width: 100%;  
+}
+
+#image {
   width: 100%;
   height: 150px;
 }
@@ -86,3 +86,42 @@ main p:last-child {
   font-size: 1rem;
   font-weight: bold;
 }
+
+/* For MEDIUM SCREENS */
+@media only screen and (min-width: 768px) {
+  #image {
+    max-width: 100%;
+    height: 400px;
+  }
+}
+
+/* FOR LARGE SCREENS */
+@media only screen and (min-width: 1024px) {
+  #main {
+    width: 70%;
+  }
+
+  #title {
+    font-size: 3rem;    
+  }
+  
+  .p01 {
+    font-size: 1.25rem;
+  }
+
+  #tribute-info {
+    width: 70%;
+  }
+
+  main p:last-child {
+    text-align: center;
+    word-spacing: .08;
+    font-size: 1.25rem;
+
+  }
+
+  #tribute-link {
+    font-size: 1.25rem;
+  }
+}
+
