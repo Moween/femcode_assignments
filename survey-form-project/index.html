@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="title">The Cream and Cake Shop</h1>
+      <p id="description"></p>
+    </header>
+    <section>
+      <form action="#" id="">
+        <div>
+          <label for="name" >Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name"><br />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email"  id="email" name="email" placeholder="Email" pattern=".+@gmail.com" required><br />
+        </div>
+        <div>
+          <label for="number">Age:</label>
+          <input type="number" id="number" name="number" placeholder="number" min="1" max="10"><br />
+        </div>
+        <fieldset>
+        <legend>Select Gender</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        </fieldset>
+        <br />
+        <div>
+          <p>Pick your favourite products</p>
+          <input type="checkbox" id="cake" name="products" value="cake">
+          <label for="checkbox">Vanilla Cake</label><br />
+          <input type="checkbox" id="minticecream" name="products" value="cake">
+          <label for="minticecream">Mint Ice-Cream</label><br />
+          <input type="checkbox" id="spongecake" name="products" value="cake">
+          <label for="spongecake">Sponge Cake</label><br />
+          <input type="checkbox" id="chocolatecake" name="products" value="cake">
+          <label for="chocolatecake">Chocolate Cake</label><br />
+          <input type="checkbox" id="peanuticecream" name="products" value="cake">
+          <label for="peanuticecream">Peanut-flavour Ice-Cream</label><br />
+          <input type="checkbox" id="redvelvetcake" name="products" value="cake">
+          <label for="redvelvetcake">Red-velvet Cake</label><br />
+          <input type="checkbox" id="coconutcake" name="products" value="cake">
+          <label for="coconutcake">Coconut Cake</label><br />
+          <input type="checkbox" id="strawberrycake" name="products" value="cake">
+          <label for="strawberry">Strawberry Cake</label><br />
+          <input type="checkbox" id="strawberryicecream" name="products" value="cake">
+          <label for="strawberryicecream">Strawberry Ice-Cream</label><br />
+          <input type="checkbox" id="vanillaicecream" name="products" value="cake">
+          <label for="vanillaicecream">Vanilla Ice-Cream</label><br />
+        </div>
+        <div>
+          <label for="dropdown">What is your best delivery option:
+            <select name="dropdown" id="dropdown">
+              <option value="dispatchrider">Home Delivery</option>
+              <option value="pickup">Pick-up</option>
+              <option value="mail">Office Delivery</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="comments">Any comments or suggestions?
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+          </label>
+        </div>
+        <label for="submit"></label><br />
+        <input type="submit" id="submit" name= "submit"value="submit">
+
+      </form>
+    </section>
+  </main>
+</body>
+</html>
