@@ -1,0 +1,483 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+/*****FOR MOBILE DEVICE****/
+/* THE HEADER CSS SELECTORS AND THE STYLE RULES. */
+#header {
+  background-color: black;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+#header-main-div01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-logo {
+  width: 20%;
+}
+
+#header-img {
+  width: 90px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-bars {
+  font-size: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  background-color: #000;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0 30px;
+  z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+}
+
+.dropdown-list-item {
+  padding: 10px;
+  text-align: center;
+  margin: 10px auto;
+  
+}
+
+.dropdown-link, .dropdown-bars {
+  display: inline-block;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+
+/* THE MAIN SECTION CSS SELECTORS AND STYLE RULES */
+
+#section1 {
+  width: 100%;
+  background-image: url(https://www.scdn.co/i/generic/hero-sm.jpg);
+  background-position: center center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.wrapper {
+width: 90%;
+padding-top: 15px;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+#title {
+  color: white;
+  font-size: 2.58rem;
+  text-align: center;
+  margin: 5px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#description {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+
+.input-container  {
+  text-align: center;
+}
+
+input[type="email"] {
+  max-width: 100%;
+  width: 200px;
+  margin: 5px auto 0;
+  padding: 5px;
+}
+
+#submit {
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+  width: 100px;
+  outline: none;
+}
+
+#submit a {
+  text-decoration: none;
+  color: black;
+}
+
+#h02 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img-box {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 200px;
+}
+
+.main-img {
+  width: 100%;
+  height: 200px;
+}
+
+.h03 {
+  text-align: center;
+  padding: 0 15px;
+  margin-top: 5px;
+  
+}
+
+
+.article-paragraph {    
+  text-align: center;
+  padding: 0 15px 15px 15px;
+}
+
+/* FOOTER SECTION CSS SELECTORS AND THEIR STYLE RULES */
+
+#footer {
+  background-color: black;
+  columns: lightgray;
+}
+
+.foot-sect {
+  margin-top: 0;
+}
+
+#footer-img {
+  display: none;
+}
+
+
+.d05 {
+  color: gray;
+  font-size: 12px;
+  letter-spacing: .08em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 50px 0 22px;
+  
+}
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-list-item {
+  padding: 10px 10px 10px 0;
+  margin: 5px 5px 5px 0;
+}
+
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+#footer-social-icons {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.footer-socialicons {
+  display: flex;
+  padding-left: 0;
+  margin: 20px 0 0;
+}
+
+.ftsoi-link {
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+}
+
+#int01 {
+  float: right;
+}
+
+#int01 a {
+  display: inline-block;
+  color: #999;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 0.78rem;
+  
+}
+
+#ftulsp {
+  clear: right;
+  display: flex;
+  font-size: 0.78rem;
+  
+}
+
+#bottom-list {
+  list-style-type: none;
+  margin: 0 45px 20px 0;    
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+
+}
+
+.bottom-links {
+  color: #999;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 7px;    
+  padding: 5px;
+
+}
+
+.bottom-links:hover {
+  color: lime;
+}
+
+
+.copy2021 {
+  color: #999;
+  width: 40%;
+  text-align: right;
+}
+
+/**MIN-WIDTH : 600px**/
+@media only screen and (min-width: 600px) {
+  /* Main Section Styles */
+  .img-box {
+      max-width: 70%;
+  }
+
+
+  /* Footer Section Styles */
+  #bottom-list {        
+      width: 70%;    
+  }
+  
+  .copy2021 {
+      width: 20%;
+  }
+}
+
+/**MIN-WIDTH : 768px**/
+@media only screen and (min-width: 768px) {
+  #header {
+      background-color:  black;
+      
+  }
+
+  .navbar {
+      display: block;
+      width: 60%;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+  
+  }
+  
+  .nav-list { 
+      padding-left: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      text-align: center;  
+      display: flex; 
+      flex-direction: row;    
+  }
+  
+  .nav-list-item {
+      padding: 10px;
+      text-align: center;
+      margin: 10px auto;
+      
+  }
+  
+  .nav-link, .dropdown-bars {
+      display: inline-block;
+      color: whitesmoke;
+      text-decoration: none;
+  }
+
+  .dropdown {
+      display: none;
+  }    
+  
+  .fa-bars {
+      display: none;
+  }
+  
+  .dropdown-content {
+      display: none;
+      
+  }  
+  .dropdown:hover .dropdown-content {
+      display: none;
+  }
+
+  /* Main Section Styles */
+  .wrapper {
+      width: 95%;
+      padding-top: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .main-section-div {
+   display: flex;  
+   justify-content: space-between; 
+   width: 100%;
+   flex-wrap: wrap;
+   margin-top: 50px;
+  }
+
+  .article-box {
+      width: 45%;
+  }
+
+  .img-box {
+      max-width: 100%;
+      margin: 0;
+  }  
+
+
+  /* Footer Section Styles */
+  #footer-section01 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+      padding-top: 50px;
+  }
+
+  .ftlinflx {
+      width: 25%;
+  }
+  .d05 {
+      margin-top: 0;
+  }
+
+  #footer-social-icons {
+      display: block;
+  }
+
+  #bottom-list {        
+      width: 70%;    
+  }
+  
+  .copy2021 {
+      width: 30%;
+      text-align: right;
+  }
+
+  
+}
+
+/*FOR LARGE SCREEN**/
+@media only screen and (min-width: 1024px) {
+  
+  /*The HEADER**/
+  .wrapper {
+      width: 80%;
+      
+  }
+  
+
+
+
+  .dropdown-bars {
+      display: none;
+  }
+  
+  /****MAIN SECTION***/
+  #section1 {
+      background-repeat: no-repeat;
+      background-position: initial;
+      background-size: 100% 100%;
+  }
+
+  .main-section-div {
+      flex-wrap: nowrap;
+  }
+ 
+  .article-box {
+      width: 20%;
+  }
+
+  .img-box {
+      max-width: 100%;
+      margin: 0;
+      
+  } 
+  #footer-section01 {        
+      flex-wrap: nowrap;
+      
+  }
+
+  #footer-img {
+      display: block;
+      max-width: 100%;
+      width: 70px;
+  }
+
+  .ftlinflx {
+      width: 20%;
+  }
+
+  #footer-social-icons {
+      display: block;
+      margin-top: 0;
+      
+  }
+
+  .footer-socialicons {
+      margin-top: 16px;
+  }
+
+  .footer-list-item {
+      margin-top: 0;
+      padding-top: 0;
+  }
+
+  .ftsoi-link {
+      margin-top: 0;
+  }
+
+
+}
